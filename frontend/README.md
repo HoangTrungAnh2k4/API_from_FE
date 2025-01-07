@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Naruto Forum - Diễn đàn game Naruto
 
-## Getting Started
+## Mô tả
 
-First, run the development server:
+Đây là một **dự án cá nhân** không nhằm mục đích thương mại. Mục đích của dự án này là tạo ra một **diễn đàn online** nơi người chơi game có thể tìm thấy thông tin về trò chơi Naruto và trao đổi thông tin với nhau. Dự án này cung cấp một không gian để chia sẻ kinh nghiệm, chiến lược, thảo luận về các phiên bản mới của trò chơi và các chủ đề liên quan đến Naruto.
+
+Trang web này giúp các game thủ giao lưu, kết nối và tìm kiếm thông tin liên quan đến trò chơi một cách dễ dàng.
+
+Trang web chính thức: [**url**](url)
+
+## Tính năng
+
+- **Diễn đàn thảo luận**: Người dùng có thể tham gia các chủ đề thảo luận liên quan đến game Naruto, bao gồm các chiến thuật, cách chơi và các chủ đề thú vị khác.
+- **Thông báo game**: Cập nhật các thông tin mới nhất về các sự kiện, bản cập nhật, và các tin tức khác liên quan đến game Naruto.
+- **Tạo bài viết và trả lời**: Người chơi có thể tạo bài viết, phản hồi và tham gia vào các cuộc thảo luận sôi nổi.
+
+## Công nghệ sử dụng
+
+- **Next.js**: Framework React cho việc xây dựng ứng dụng web.
+- **TailwindCSS**: Công cụ CSS utility-first giúp tạo giao diện đẹp và tối giản.
+- **React**: Thư viện JavaScript để xây dựng giao diện người dùng.
+- **Node.js**: Môi trường runtime để chạy ứng dụng.
+- **Express (nếu có)**: Dùng cho việc tạo API backend nếu cần.
+
+## Hướng dẫn cài đặt
+
+### 1. Clone dự án về máy
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/naruto-forum.git
+cd naruto-forum
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
