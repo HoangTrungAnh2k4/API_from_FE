@@ -1,12 +1,5 @@
-import { Button } from "antd";
+import { redirect } from 'next/navigation';
 
-export default function Home() {
-  return (
-    <div>
-      hello world
-      <div>
-        <Button type="primary">Primary Button</Button>
-      </div>
-    </div>
-  );
+export default function Page() {
+    redirect('/home');
 }
