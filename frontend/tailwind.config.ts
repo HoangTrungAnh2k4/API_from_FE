@@ -9,8 +9,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#FF571A",
+        background: "#1E252B",
+        dark3: "#262D34",
+        dark4: "#2C353D",
+        tag: "#C5D0E6"
+      },
+      boxShadow: {
+        'inner-reverse': 'inset 0px -1px 1px rgba(0, 0, 0, 0.1)',
       },
     },
   },
