@@ -18,7 +18,7 @@ const HomeContent = () => {
                 <div className="flex items-center gap-6 px-6 py-4">
                     <div className="rounded-full border-[2px] border-primary px-[3px] py-[2px] pl-[2px]">
                         <Image
-                            src={'/images/logo.png'}
+                            src="/images/general/logo.png"
                             alt="Logo"
                             width={40}
                             height={40}
@@ -36,7 +36,7 @@ const HomeContent = () => {
                 {Array.from({ length: 5 }).map((_, index) => (
                     <div key={index} className="flex rounded-xl bg-dark3 p-5 text-white">
                         <div className="h-[156px] min-w-[156px] rounded-xl bg-blue-200">
-                            {/* <Image src={''} alt="Logo" /> */}
+                            {/* <Image src="/images/general/logo.png" alt="Logo" /> */}
                         </div>
                         <div className="ml-5 flex flex-col">
                             <div className="flex">
@@ -66,7 +66,7 @@ const HomeContent = () => {
                             <div className="mt-auto flex items-center justify-between gap-3">
                                 <div className="flex gap-3">
                                     <Image
-                                        src={'/images/logo.png'}
+                                        src={'/images/general/logo.png'}
                                         alt="Logo"
                                         width={40}
                                         height={40}

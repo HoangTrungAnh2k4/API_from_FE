@@ -12,8 +12,9 @@ export default {
         primary: "#FF571A",
         background: "#1E252B",
         dark3: "#262D34",
-        dark4: "#2C353D",
-        tag: "#C5D0E6"
+        dark4: "#394047",
+        tag: "#C5D0E6",
+        textColor: "#7a6448"
       },
       boxShadow: {
         'inner-reverse': 'inset 0px -1px 1px rgba(0, 0, 0, 0.1)',

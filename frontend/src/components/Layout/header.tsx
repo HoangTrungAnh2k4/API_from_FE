@@ -20,7 +20,7 @@ const Header = () => {
         >
             {/* Left */}
             <div className="header__left flex items-center font-bold text-primary">
-                <Image src={'/images/logo.png'} alt="Logo" width={32} height={32} className="rounded-md" />
+                <Image src={'/images/general/logo.png'} alt="Logo" width={32} height={32} className="rounded-md" />
                 <h1 className="ml-3 text-2xl font-semibold">Naruto mobile</h1>
             </div>
 
@@ -29,17 +29,17 @@ const Header = () => {
                 <ul className="flex items-center gap-24">
                     {[
                         { href: '/home', Icon: HomeRoundedIcon },
-                        { href: '/videos', Icon: OndemandVideoOutlinedIcon },
+                        { href: '/video', Icon: OndemandVideoOutlinedIcon },
                         { href: '/announce', Icon: NewspaperOutlinedIcon },
                     ].map(({ href, Icon }) => (
                         <Link
                             key={href}
                             href={href}
                             className={`flex size-10 cursor-pointer items-center justify-center rounded-lg ${
-                                pathname === href ? 'bg-primary' : 'hover:bg-dark4 hover:text-primary'
+                                pathname.includes(href) ? 'bg-primary' : 'hover:bg-dark4 hover:text-primary'
                             }`}
                         >
-                            <Icon style={{ fontSize: '26px' }} />
+                            <Icon style={{ fontSize: '30px' }} />
                         </Link>
                     ))}
                 </ul>
@@ -57,7 +57,7 @@ const Header = () => {
                     <div className="flex items-center gap-3">
                         <div className="rounded-lg border-[2px] border-primary px-[3px] py-[2px] pl-[2px]">
                             <Image
-                                src={'/images/logo.png'}
+                                src={'/images/general/logo.png'}
                                 alt="Logo"
                                 width={32}
                                 height={32}

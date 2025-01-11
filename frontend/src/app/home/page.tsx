@@ -11,7 +11,6 @@ const Home = () => {
                 <Sidebar />
                 <HomeContent />
                 <Sidebar />
-                home
             </div>
         </div>
     );

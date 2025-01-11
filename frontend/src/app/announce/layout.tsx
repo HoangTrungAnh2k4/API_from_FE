@@ -2,11 +2,11 @@ import React from 'react';
 import Header from '@/components/Layout/header';
 import Sidebar from '@/app/announce/sidebar';
 
-export default function AnnounceLayout({
+const AnnounceLayout = ({
     children,
 }: Readonly<{
     children: React.ReactNode;
-}>) {
+}>) => {
     return (
         <div>
             <Header />
@@ -15,8 +15,10 @@ export default function AnnounceLayout({
                 style={{ backgroundImage: `url(/images/general/background.jpg)` }}
             >
                 <Sidebar />
-                <div className="w-5/6">{children}</div>
+                <div className="ml-10 w-4/6">{children}</div>
             </div>
         </div>
     );
-}
+};
+
+export default AnnounceLayout;
