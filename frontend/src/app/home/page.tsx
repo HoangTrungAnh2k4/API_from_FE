@@ -7,7 +7,14 @@ const Home = () => {
         <div>
             <Header />
             {/* 64px is hight of header */}
-            <div className="mt-[64px] flex bg-background px-10 pt-5 text-white">
+            <div
+                className="mt-[64px] flex px-10 pt-5 text-white"
+                style={{
+                    backgroundImage: "url('/images/general/background.jpg')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
+            >
                 <Sidebar />
                 <HomeContent />
                 <Sidebar />

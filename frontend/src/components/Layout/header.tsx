@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -9,18 +8,27 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import NewspaperOutlinedIcon from '@mui/icons-material/NewspaperOutlined';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import AdminPanelSettingsOutlinedIcon from '@mui/icons-material/AdminPanelSettingsOutlined';
 
 const Header = () => {
     const pathname = usePathname();
 
     return (
         <header
-            className="header shadow-inner-botton fixed top-0 flex h-[64px] w-full items-center justify-between p-6 text-white shadow-inner-reverse shadow-white"
+            className="header shadow-inner-botton fixed top-0 z-50 flex h-[64px] w-full items-center justify-between p-6 text-white shadow-inner-reverse shadow-white"
             style={{ backgroundImage: `url(/images/general/bg_header.png)` }}
         >
             {/* Left */}
             <div className="header__left flex items-center font-bold text-primary">
-                <Image src={'/images/general/logo.png'} alt="Logo" width={32} height={32} className="rounded-md" />
+                <div
+                    className="size-10 rounded-lg"
+                    style={{
+                        backgroundImage: `url(/images/general/logo.png)`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                    }}
+                ></div>
                 <h1 className="ml-3 text-2xl font-semibold">Naruto mobile</h1>
             </div>
 
@@ -31,6 +39,7 @@ const Header = () => {
                         { href: '/home', Icon: HomeRoundedIcon },
                         { href: '/video', Icon: OndemandVideoOutlinedIcon },
                         { href: '/announce', Icon: NewspaperOutlinedIcon },
+                        { href: '/dashboard', Icon: AdminPanelSettingsOutlinedIcon },
                     ].map(({ href, Icon }) => (
                         <Link
                             key={href}
@@ -55,14 +64,16 @@ const Header = () => {
                         <NotificationsIcon style={{ fontSize: '30px' }} />
                     </li>
                     <div className="flex items-center gap-3">
-                        <div className="rounded-lg border-[2px] border-primary px-[3px] py-[2px] pl-[2px]">
-                            <Image
-                                src={'/images/general/logo.png'}
-                                alt="Logo"
-                                width={32}
-                                height={32}
-                                className="rounded-md bg-white"
-                            />
+                        <div className="rounded-full border-[2px] border-primary px-[3px] py-[2px] pl-[2px]">
+                            <div
+                                className="size-8 rounded-full"
+                                style={{
+                                    backgroundImage: `url(/images/general/logo.png)`,
+                                    backgroundRepeat: 'no-repeat',
+                                    backgroundSize: 'contain',
+                                    backgroundPosition: 'center',
+                                }}
+                            ></div>
                         </div>
                         <p className="font-semibold">Hoang Trung Anh</p>
                     </div>

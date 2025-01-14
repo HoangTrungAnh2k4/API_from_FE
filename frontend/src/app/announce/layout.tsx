@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '@/components/Layout/header';
+import Footer from '@/components/Layout/footer';
 import Sidebar from '@/app/announce/sidebar';
 
 const AnnounceLayout = ({
@@ -11,12 +12,14 @@ const AnnounceLayout = ({
         <div>
             <Header />
             <div
-                className="mt-[64px] flex px-10 pt-5 text-white"
+                className="mt-[64px] flex px-2 pt-5 text-white"
                 style={{ backgroundImage: `url(/images/general/background.jpg)` }}
             >
                 <Sidebar />
-                <div className="ml-10 w-4/6">{children}</div>
+                {/* <div className="h-10 w-[250px] bg-green-200"></div> */}
+                <div className="mx-auto mb-12 w-[60%]">{children}</div>
             </div>
+            <Footer />
         </div>
     );
 };

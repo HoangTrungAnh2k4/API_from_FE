@@ -1,33 +1,29 @@
 'use client';
 
-import Image from 'next/image';
-
 import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded';
 import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
-import { useEffect } from 'react';
 
 const HomeContent = () => {
-    useEffect(() => {
-        console.log('HomeContent');
-    }, []);
-
     return (
         <div className="main-content mx-10 flex-1">
             {/* create post */}
-            <div className="rounded-2xl bg-dark3">
-                <div className="flex items-center gap-6 px-6 py-4">
-                    <div className="rounded-full border-[2px] border-primary px-[3px] py-[2px] pl-[2px]">
-                        <Image
-                            src="/images/general/logo.png"
-                            alt="Logo"
-                            width={40}
-                            height={40}
-                            className="rounded-full bg-white"
-                        />
-                    </div>
-                    <div className="w-full cursor-pointer select-none rounded-lg bg-dark4 p-3 pl-5 text-[#858EAD]">
-                        Hãy chia sẻ những suy nghĩ của bạn
-                    </div>
+            <div className="flex items-center gap-6 rounded-2xl border-2 border-textColor2 border-opacity-10 bg-white px-6 py-4 shadow-sm">
+                <div className="rounded-full border-[2px] border-primary px-[3px] py-[2px] pl-[2px]">
+                    <div
+                        className="size-8 rounded-full"
+                        style={{
+                            backgroundImage: `url(/images/general/logo.png)`,
+                            backgroundRepeat: 'no-repeat',
+                            backgroundSize: 'contain',
+                            backgroundPosition: 'center',
+                        }}
+                    ></div>
+                </div>
+                <div
+                    className="w-full cursor-pointer select-none rounded-lg bg-opacity-50 p-3 pl-5 text-textColor2"
+                    style={{ backgroundColor: 'rgba(227, 222, 216, 0.5)' }}
+                >
+                    Hãy chia sẻ những suy nghĩ của bạn
                 </div>
             </div>
 
@@ -65,13 +61,15 @@ const HomeContent = () => {
 
                             <div className="mt-auto flex items-center justify-between gap-3">
                                 <div className="flex gap-3">
-                                    <Image
-                                        src={'/images/general/logo.png'}
-                                        alt="Logo"
-                                        width={40}
-                                        height={40}
-                                        className="rounded-full bg-white"
-                                    />
+                                    <div
+                                        className="size-8 rounded-full"
+                                        style={{
+                                            backgroundImage: `url(/images/general/logo.png)`,
+                                            backgroundRepeat: 'no-repeat',
+                                            backgroundSize: 'contain',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    ></div>
                                     <div className="">
                                         <p className="text-sm font-semibold">Hoang Trung Anh</p>
                                         <p className="text-[10px] font-normal text-tag">3 ngày trước</p>
